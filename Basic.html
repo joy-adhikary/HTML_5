@@ -1,33 +1,160 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Basic concept of HTML </title>
+
+    <!-- https://www.tutorialspoint.com/html/html_meta_tags.htm -->
+
+    <!-- If you want your page keep refreshing after every 5 seconds then use the following syntax. -->
+    <!-- <meta http-equiv="refresh" content="5" /> -->
+
+    <!-- Following is an example of redirecting current page to another page after 5 seconds. If you want to redirect page immediately then do not specify content attribute. -->
+
+    <!--  
+    <meta http-equiv="refresh" content="2; url = http://www.tutorialspoint.com" />
+    -->
+
+</head>
+
 <body>
 
-<h2>JavaScript addEventListener()</h2>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
 
-<p>This example uses the addEventListener() method to add many events on the same button.</p>
+    <!-- style or css property  -->
 
-<button id="myBtn">Try it</button>
+    <h1 style="color:blue;">This is a heading</h1>
+    <h1 style="border:2px solid Tomato;">Hello joy</h1>
+    <h1 style="background-color:powderblue;">This is a heading</h1>
+    <h1 style="font-family:sans-serif;">This is a heading</h1>
+    <p style="font-family:arial; color:#Ff0000;">Some text...</p>
 
-<p id="demo"></p>
 
-<script>
-var x = document.getElementById("myBtn");
-x.addEventListener("mouseover", myFunction);
-x.addEventListener("click", mySecondFunction);
-x.addEventListener("mouseout", myThirdFunction);
+    <p>Here is a first paragraph of text.</p>
+    <p>Here is a second paragraph of text.</p>
+    <p>Here is a third paragraph of text.</p>
 
-function myFunction() {
-  document.getElementById("demo").innerHTML += "Moused over!<br>";
-}
+    <hr />
 
-function mySecondFunction() {
-  document.getElementById("demo").innerHTML += "Clicked!<br>";
-}
 
-function myThirdFunction() {
-  document.getElementById("demo").innerHTML += "Moused out!<br>";
-}
-</script>
+    <p align="left">This is left aligned</p>
+    <p align="center">This is center aligned</p>
+    <p style="text-align:center;"> this one is also valid Centered paragraph.</p>
+    <p align="right">This is right aligned</p>
+    <p valign="middle">joy</p>
+
+    <!-- attribute values  -->
+
+    <a href="https://www.w3schools.com">Its a hyperlink </a><br>
+    <a href="/html/index.htm" target="_blank">Opens in New window</a> <br>
+    <a href="/html/index.htm" target="_self">Opens in Self window</a><br>
+    <a href="mailto: abc@example.com">This is for Sending Email</a><br>
+    <br>
+
+    <img src="joy.JPG" width="600" height="600">
+    <img src="joys.JPG" alt="cool boy with a jacket">
+
+
+    <!-- move you mouse it to the output The title attribute defines some extra information about an element -->
+    <p title=" Joy adhikary a soft eng.">hey its joy from cox's bazar . if you move mouse over this line you will get
+        title info </p>
+
+    <p>Hello<br /> You delivered your assignment ontime.<br /> Thanks <br /> joy</p>
+
+    <center>
+        <p>This text is in the center.</p>
+    </center>
+
+    <!--Sometimes, you want your text to follow the exact format of how it is written in the HTML document. In these cases, you can use the preformatted tag <pre>. -->
+
+    <pre>
+     function testFunction( strText ){
+        alert(strText)
+     }
+    </pre>
+
+    <!-- Formatting  -->
+
+    <!-- <b> - Bold text
+    <strong> - Important text
+    <i> - Italic text
+    <em> - Emphasized text
+    <mark> - Marked text
+    <small> - Smaller text
+    <del> - Deleted text
+    <ins> - Inserted text
+    <sub> - Subscript text
+    <sup> - Superscript text -->
+
+    <p>The following word uses an <i>italicized</i> typeface.</p>
+    <p>The following word uses a <b>bold</b> typeface.</p>
+    <p>The following word uses an <u>underlined</u> typeface.</p>
+    <p>The following word uses a <strike>strikethrough</strike> typeface.</p>
+    <p>The following word uses a <sup>superscript</sup> typeface.</p>
+    <p>The following word uses a <tt>monospaced</tt> typeface.</p>
+    <p>The following word uses a <sub>subscript</sub> typeface.</p>
+    <p>I want to drink <del>cola</del> <ins>wine</ins></p>
+    <p>The following word uses a <big>big</big> typeface.</p>
+    <p><bdo dir="rtl">This text will go right to left.</bdo></p>
+    <div id="menu" align="center">
+        <b><a href="">HOME</a></b>
+        <a href="">CONTACT</a> |
+        <b><a href="">ABOUT</a></b>
+    </div>
+
+
+    <ol type="i" start="8">
+        <li>This is the listing type</li>
+        <li>Ginger</li>
+        <li>Potato</li>
+        <li>Radish</li>
+    </ol>
+
+
+    <!-- The HTML and XHTML provides a feature that lets you embed many different links inside a single image. You can create different links on the single image based on different coordinates available on the image. -->
+
+    <!-- Server-side image maps − This is enabled by the ismap attribute of the <img> tag and requires access to a server and related image-map processing applications.
+         Client-side image maps − This is created with the usemap attribute of the <img> tag, along with corresponding <map> and <area> tags. -->
+
+    <!-- https://www.tutorialspoint.com/html/html_image_links.htm -->
+
+
+    <style>
+        a:link {
+            color: rgb(236, 70, 14);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(12, 174, 1);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+
+    <p>You can change the default colors of links</p>
+
+    <a href="joy.JPG" target="_blank">multi colour link </a>
+
 
 </body>
+
 </html>
