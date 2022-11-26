@@ -16,6 +16,7 @@
     <!--  
     <meta http-equiv="refresh" content="2; url = http://www.tutorialspoint.com" />
     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -83,7 +84,8 @@
 
     <!-- Formatting  -->
 
-    <!-- <b> - Bold text
+    <!-- 
+    <b> - Bold text
     <strong> - Important text
     <i> - Italic text
     <em> - Emphasized text
@@ -92,7 +94,7 @@
     <del> - Deleted text
     <ins> - Inserted text
     <sub> - Subscript text
-    <sup> - Superscript text -->
+    <sup> - Superscript text   -->
 
     <p>The following word uses an <i>italicized</i> typeface.</p>
     <p>The following word uses a <b>bold</b> typeface.</p>
@@ -104,9 +106,10 @@
     <p>I want to drink <del>cola</del> <ins>wine</ins></p>
     <p>The following word uses a <big>big</big> typeface.</p>
     <p><bdo dir="rtl">This text will go right to left.</bdo></p>
+
     <div id="menu" align="center">
         <b><a href="">HOME</a></b>
-        <a href="">CONTACT</a> |
+        <a href="">CONTACT</a>
         <b><a href="">ABOUT</a></b>
     </div>
 
@@ -144,7 +147,7 @@
         }
 
         a:hover {
-            color: red;
+            color: rgb(110, 34, 232);
             background-color: transparent;
             text-decoration: underline;
         }
@@ -212,6 +215,13 @@
     <!-- The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}. -->
 
     <style>
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
         .city {
             background-color: tomato;
             color: white;
@@ -225,7 +235,7 @@
             text-align: center;
         }
     </style>
-
+    <h1 id="myHeader">This is a h1 tag . It called its style property using id </h1>
     <h2 class="city main">London</h2> <!-- last a main ajonno main er tai hobe  -->
     <h2 class="city">Paris</h2>
     <h2 class="city">Tokyo</h2>
@@ -234,8 +244,19 @@
 
     <!-- An HTML iframe is used to display a web page within a web page. -->
 
-    <iframe src="https://www.w3schools.com/html/html_iframe.asp" height="200" width="300" title="Iframe Example"></iframe>
+    <iframe src="https://www.w3schools.com/html/html_iframe.asp" height="200" width="300"
+        title="Iframe Example"></iframe>
 
+    <!-- Responsive text -->
+
+    <h1 style="font-size:10vw;">This is responsive text</h1>
+    <p style="font-size:5vw;">This is responsive text</p>
+    <p>This is not responsive text. it will change when the screen size is shiffted but responsive text will not gone a
+        change until its vm limit cross.
+        here 1vw mean 1% of the window screen . so if the windos size is 100 cm then 10vw means this element will be
+        resposive untill >= 10 cm .
+    </p>
+    
 </body>
 
 </html>
